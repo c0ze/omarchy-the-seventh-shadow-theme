@@ -1,0 +1,6 @@
+[Unit]
+Description=The Seventh Shadow: next background
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/seventh-shadow-bg-next

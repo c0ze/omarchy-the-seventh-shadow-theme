@@ -1,0 +1,41 @@
+# The Seventh Shadow
+# The band's identity kit (the7th-shadow/brand/tokens.json) on the frozen lake of
+# "The Beast in the Baud": void and obsidian for the ground, pewter and ink for
+# text, vein (Ophelia's cyan) as the accent, gold, the rose of her gown and the
+# ember of the fire for the warm notes, Talciron's plum tint for magenta.
+
+mode = "dark"
+
+accent = "#6FD3F0"
+selection = "#1C2A33"
+muted = "#6B7178"
+
+background = "#0B0C0E"
+dark_background = "#08090A"
+darker_background = "#050607"
+lighter_background = "#14171B"
+
+foreground = "#C9CCCF"
+dark_foreground = "#8D949B"
+light_foreground = "#DDE1E5"
+bright_foreground = "#ECEAE4"
+
+red = "#D2526A"
+yellow = "#C9A66B"
+orange = "#E07B3F"
+green = "#6FBF9B"
+cyan = "#6FD3F0"
+blue = "#6C9DCB"
+magenta = "#B07A93"
+brown = "#8C6B3A"
+
+bright_red = "#E97F93"
+bright_yellow = "#E3C48E"
+bright_green = "#93D7B7"
+bright_cyan = "#A8E6F7"
+bright_blue = "#9CC3EA"
+bright_magenta = "#C99BB1"
+
+# The active window's border runs from vein to gold; hyprland.lua turns it slowly.
+hyprland_active_border = "rgba(6fd3f0ee) rgba(b08d57ee) 45deg"
+hyprland_inactive_border = "rgba(3a4046aa)"

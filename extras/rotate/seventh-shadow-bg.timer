@@ -1,0 +1,11 @@
+[Unit]
+Description=The Seventh Shadow: rotate the backgrounds
+
+[Timer]
+# Every ten minutes of session time. Change the two values, then: systemctl --user daemon-reload
+OnActiveSec=10min
+OnUnitActiveSec=10min
+AccuracySec=10s
+
+[Install]
+WantedBy=timers.target

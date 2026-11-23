@@ -1,0 +1,11 @@
+#!/bin/bash
+# Move to the next background, but only while The Seventh Shadow is the current theme and nothing is fullscreen
+# (a game or a film would not show it, and the new picture's intro and loop would cost it frames).
+# Run by seventh-shadow-bg.timer; safe to run by hand.
+set -u
+[[ $(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null) == the-seventh-shadow ]] || exit 0
+if command -v hyprctl >/dev/null && command -v jq >/dev/null; then
+  fullscreen=$(hyprctl activewindow -j 2>/dev/null | jq -r '.fullscreen // 0' 2>/dev/null)
+  [[ ${fullscreen:-0} == 0 || ${fullscreen:-0} == false ]] || exit 0
+fi
+exec omarchy-theme-bg-next

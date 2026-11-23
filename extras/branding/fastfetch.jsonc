@@ -1,0 +1,176 @@
+// The Seventh Shadow: fastfetch / Omarchy About.
+// Logo: ~/.config/omarchy/branding/about.txt (the band's crest).
+// Key colors are ANSI names so they track the active Omarchy theme:
+//   cyan = the veins, yellow = gold, magenta = plum.
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/omarchy/branding/about.txt",
+    "color": {
+      "1": "cyan"
+    },
+    "padding": {
+      "top": 2,
+      "right": 6,
+      "left": 2
+    }
+  },
+  "display": {
+    "disableLinewrap": true
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌───────────────The Machine · Hardware───────────────┐"
+    },
+    {
+      "type": "host",
+      "key": " PC",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├",
+      "showPeCoreCount": true,
+      "keyColor": "cyan"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├",
+      "detectionMethod": "pci",
+      "format": "{name}",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󱄄",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "disk",
+      "key": "│ ├󰋊",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "swap",
+      "key": "└ └󰓡 ",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────────────────The Ghost · Software────────────────┐"
+    },
+    {
+      "type": "command",
+      "key": " OS",
+      "keyColor": "yellow",
+      "text": "version=$(omarchy-version) && echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰘬",
+      "keyColor": "yellow",
+      "text": "omarchy-version-branch"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰔫",
+      "keyColor": "yellow",
+      "text": "channel=$(omarchy-version-channel); echo \"$channel\""
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "de",
+      "key": " DE",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "packages",
+      "key": "│ ├󰏖",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "wmtheme",
+      "key": "│ ├󰉼",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰸌",
+      "keyColor": "yellow",
+      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38m●\\e[37m●\\e[36m●\\e[35m●\\e[34m●\\e[33m●\\e[32m●\\e[31m●\""
+    },
+    {
+      "type": "terminalfont",
+      "key": "└ └",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─────────The Shadow · Age / Uptime / Update─────────┐"
+    },
+    {
+      "type": "command",
+      "key": "󱦟 OS Age",
+      "keyColor": "magenta",
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "command",
+      "key": " Update",
+      "keyColor": "magenta",
+      "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m                 Alienation By Design"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[36m                the7th-shadow.arda.tr"
+    },
+    "break"
+  ]
+}
