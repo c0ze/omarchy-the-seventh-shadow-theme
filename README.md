@@ -5,7 +5,7 @@ animated 4K backgrounds, with the band's crest and its colours: void, pewter, th
 
 **[the7th-shadow.arda.tr](https://the7th-shadow.arda.tr)**: The 7th Shadow is a solo project of industrial gothic
 doom from Tokyo. A daemon raises a woman from a 1995 world file. Albums *Alienation By Design* (2025) and
-*Anti-Nativity* (2026).
+*Anti-Nativity* (out 25 December 2026).
 
 ![The Seventh Shadow](preview.webp)
 
