@@ -22,8 +22,8 @@ cyan veins, the ice. Click the picture to watch it on YouTube.
 omarchy theme install https://github.com/c0ze/omarchy-the-seventh-shadow-theme
 ```
 
-Or in the menu: **Super + Space → Install → Style → Theme**, then paste the URL. The clone is about 100 MB, almost
-all of it video.
+Or in the menu: **Super + Space → Install → Style → Theme**, then paste the URL. It downloads about 100 MB, almost
+all of it video, and takes twice that on disk with git's own copy.
 
 ## What is in here
 
