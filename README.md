@@ -60,6 +60,13 @@ Two things a theme folder can't do by itself are in `extras/`:
 `--no-rotation` leaves the timer out. To turn it off later:
 `systemctl --user disable --now seventh-shadow-bg.timer`.
 
+## On Windows
+
+**[c0ze/windows-the-seventh-shadow-theme](https://github.com/c0ze/windows-the-seventh-shadow-theme)** brings the
+same seven stills and palette to Windows 10 and 11: a `.deskthemepack` to double-click, plus a script for the accent
+on title bars, the lock screen, a Windows Terminal scheme and the crest in fastfetch. Windows has no animated
+wallpapers, so it uses the stills only.
+
 ## How the pictures were made
 
 They are new pictures, not frames of the video: Qwen Image Edit worked from Ophelia's portrait and the video's gown
